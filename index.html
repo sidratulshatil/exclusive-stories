@@ -47,22 +47,10 @@
     <!-- main Start -->
     <main>
         <section class=" ">
-            <div class="d-flex flex-lg-row justify-content-evenly align-items-center flex-sm-column">
-                <div class=""><a id="btn-home" class="btn text-secondary">Home</a></div>
-                <div class=""><a id="btn-bn" onclick="newsPortel('01')" class="btn text-secondary">Breaking
-                        News</a>
-                </div>
-                <div class=""><a id="btn-rn" onclick="newsPortel('02')" class="btn text-secondary">Regular News</a>
-                </div>
-                <div class=""><a id="btn-in" onclick="newsPortel('03')" class="btn text-secondary">International
-                        News</a></div>
-                <div class=""> <a id="btn-sports" onclick="newsPortel('04')" class="btn text-secondary">Sports</a></div>
-                <div class=""><a id="btn-entertainment" onclick="newsPortel('05')"
-                        class="btn text-secondary">Entertainment</a></div>
-                <div class=""><a id="btn-culture" onclick="newsPortel('06')" class="btn text-secondary">Culture</a>
-                </div>
-                <div class=""><a id="btn-arts" onclick="newsPortel('07')" class="btn text-secondary">Arts</a></div>
-                <div class=""> <a id="btn-an" onclick="newsPortel('08')" class="btn text-secondary">All News</a></div>
+            <div id="news-container"
+                class="d-flex flex-lg-row justify-content-evenly align-items-center flex-sm-column">
+                <a id="btn-bn"" class=" btn text-secondary">Home</a>
+
 
             </div>
         </section>
@@ -88,28 +76,9 @@
             </div>
         </section>
 
-        <section class="container mt-4">
-            <div id="news-field" class="card mb-3 g-3" style="max-width:100;">
-                <div class="row g-3 mb-3">
-                    <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div><img class="author-img" src="Mask Group.png" alt=""><span
-                                    id="author-name">Author</span></div>
-                            <div class="text-center ml-4 "> <i class="fa-solid fa-eye"></i><span id="view-field">
-                                    0</span>
-                            </div>
-                            <div class="text-end "> <a href=""><i class="fa-solid fa-arrow-right"></i></a> </div>
-                        </div>
-                    </div>
-                </div>
+        <section class="container mt-4 rounded-lg g-4">
+            <div id="news-field" class="card mb-3 g-4" style="max-width:100;">
+
             </div>
         </section>
         <!-- Button trigger modal -->
@@ -126,6 +95,9 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div id="modalImg">
+
+                    </div>
+                    <div id="author-details">
 
                     </div>
                     <div id="modalNews" class="modal-body">
