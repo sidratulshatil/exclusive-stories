@@ -1,8 +1,12 @@
+document.getElementById("loading-spinner").style.display = 'none'
+
 const newsPortel = async (category_id) => {
+    document.getElementById("loading-spinner").style.display = 'block'
     const url = `https://openapi.programming-hero.com/api/news/category/${category_id}`
     const res = await fetch(url)
     const data = await res.json()
     displayNewsPortel(data.data)
+    document.getElementById("loading-spinner").style.display = 'none'
 }
 
 const displayNewsPortel = (news) => {
