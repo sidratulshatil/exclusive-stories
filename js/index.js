@@ -10,7 +10,10 @@ const newsPortel = async (category_id) => {
 }
 
 const displayNewsPortel = (news) => {
-    console.log(news)
+    console.log(news.length)
+    news.sort((a, b) => Number(b.total_view) - Number(a.total_view));
+    const itemNumbers = document.getElementById('item-numbers')
+    itemNumbers.innerText = news.length
     const newsField = document.getElementById('news-field')
     newsField.innerHTML = ''
     news.forEach(a => {
