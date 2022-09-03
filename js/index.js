@@ -43,9 +43,18 @@ const newsDetails = async (news_id) => {
 }
 const newsDetailsDisplay = news => {
     console.log(news)
+
     const modalTitle = document.getElementById("newsDetailsModalLabel")
     modalTitle.innerText = news[0].title
     const modalDetails = document.getElementById('modalNews')
     modalDetails.innerText = news[0].details
+    const modalImg = document.getElementById('modalImg')
+    modalImg.innerHTML = ''
+    const div = document.createElement('div')
+    div.innerHTML = `
+    <img class="img-fluid" src="${news[0].image_url}" alt="">
+    `
+    modalImg.appendChild(div)
+    console.log(modalImg)
 }
 newsPortel('08')
